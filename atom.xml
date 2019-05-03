@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jescu</title>
   
-  
+  <subtitle>Jescu 的芒果</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-05-02T12:37:06.451Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://www.yiyongjie.ml/"/>
+  <updated>2019-05-03T06:53:55.822Z</updated>
+  <id>http://www.yiyongjie.ml/</id>
   
   <author>
     <name>Jescu Eason</name>
@@ -17,9 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git终端加速</title>
+    <link href="http://www.yiyongjie.ml/2019/05/03/Git%E7%BB%88%E7%AB%AF%E5%8A%A0%E9%80%9F/"/>
+    <id>http://www.yiyongjie.ml/2019/05/03/Git终端加速/</id>
+    <published>2019-05-03T05:34:00.000Z</published>
+    <updated>2019-05-03T06:53:55.822Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>几天前重装了一下系统，git clone 老是下不来，一直失败…；今天下载一个项目等待了许久也是一直未开始下载，本身也开了科学上网，体验极差…。</p><p>无奈上网查了一下，速度真的快了很多，在此记录一下。</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>在 hosts [C:\Windows\System32\drivers\etc]文件中添加：<br></p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># GitHub Begin</span><br><span class="line">192.30.255.113 github.com</span><br><span class="line">192.30.255.119 gist.github.com</span><br><span class="line">185.199.110.153 assets-cdn.github.com</span><br><span class="line">151.101.228.133 raw.githubusercontent.com</span><br><span class="line">151.101.228.133 gist.githubusercontent.com</span><br><span class="line">151.101.228.133 cloud.githubusercontent.com</span><br><span class="line">151.101.228.133 camo.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars0.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars1.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars2.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars3.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars4.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars5.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars6.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars7.githubusercontent.com</span><br><span class="line">151.101.228.133 avatars8.githubusercontent.com</span><br><span class="line"># GitHub End</span><br></pre></td></tr></tbody></table></figure><p></p><p>添加后打开cmd输入 <code>ipconfig /flushdns</code> 刷新DNS即可，无需重启。</p><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>方便以后查阅，不用临时去找。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;几天前重装了一下系统，git clone 老是下不来，一直失败…；今天下载一个项目等待了许久也是一直未开始下载，本身也开了科学上网，体验极差
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://www.yiyongjie.ml/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Git" scheme="http://www.yiyongjie.ml/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Open Blog</title>
-    <link href="http://yoursite.com/2019/05/02/Open-Blog/"/>
-    <id>http://yoursite.com/2019/05/02/Open-Blog/</id>
+    <link href="http://www.yiyongjie.ml/2019/05/02/Open-Blog/"/>
+    <id>http://www.yiyongjie.ml/2019/05/02/Open-Blog/</id>
     <published>2019-05-02T12:20:40.000Z</published>
     <updated>2019-05-02T12:37:06.451Z</updated>
     
@@ -41,8 +66,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/04/28/hello-world/"/>
-    <id>http://yoursite.com/2019/04/28/hello-world/</id>
+    <link href="http://www.yiyongjie.ml/2019/04/28/hello-world/"/>
+    <id>http://www.yiyongjie.ml/2019/04/28/hello-world/</id>
     <published>2019-04-28T14:24:43.565Z</published>
     <updated>2019-04-29T11:33:51.027Z</updated>
     
