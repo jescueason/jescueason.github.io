@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yiyongjie.ml/"/>
-  <updated>2019-05-03T07:58:03.100Z</updated>
+  <updated>2019-05-18T09:29:34.356Z</updated>
   <id>http://www.yiyongjie.ml/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome-自带截取长图</title>
+    <link href="http://www.yiyongjie.ml/2019/05/03/Chrome-%E8%87%AA%E5%B8%A6%E6%88%AA%E5%8F%96%E9%95%BF%E5%9B%BE/"/>
+    <id>http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/</id>
+    <published>2019-05-03T05:34:00.000Z</published>
+    <updated>2019-05-18T09:29:34.356Z</updated>
+    
+    <content type="html"><![CDATA[<p>不再需要截图插件了~</p><a id="more"></a><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>想展示网页全图效果给别人看的时候屏幕可视化区域是有限的，以前为了截取长图还特意找Chrome插件，不过效果不是很理想…<br>直到前几天发现原来Chrome自带全屏截图的，废话不多说了请看下文。</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>摁下 F12，打开开发者模式，使用快捷键 Ctrl+Shift+P，Mac 当中是 Command+Shift+P，调出如下菜单<br></p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2019/05/03/Chrome-自带截取长图/1.png" alt title>                </div>                <div class="image-caption"></div>            </figure><p></p><p>在其中输入 Screenshot 即可看到内容：<br></p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2019/05/03/Chrome-自带截取长图/2.png" alt title>                </div>                <div class="image-caption"></div>            </figure><p></p><p>第一个是区域截屏; 第二个是自动截取全部网页; 第三个是当前节点; 第四个是当前屏幕；截取之后，图片自动下载。</p><h3 id="效果图-这里以哔哩哔哩为例"><a href="#效果图-这里以哔哩哔哩为例" class="headerlink" title="效果图 [这里以哔哩哔哩为例]"></a>效果图 [这里以哔哩哔哩为例]</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2019/05/03/Chrome-自带截取长图/bilibili.png" alt title>                </div>                <div class="image-caption"></div>            </figure><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>日常记录~ 还有很多有用的技巧请点击下方~ 本文只记录对作者感兴趣的地方~ <br><br>原文链接：<a href="https://www.zhihu.com/question/34682699" target="_blank" rel="noopener">Chrome 的审查元素功能有哪些奇技淫巧？</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不再需要截图插件了~&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="http://www.yiyongjie.ml//categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Chrome" scheme="http://www.yiyongjie.ml//tags/Chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>Git终端加速</title>
