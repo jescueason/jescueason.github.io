@@ -6,13 +6,13 @@
     
     
     
-    <title>Chrome-自带截取长图 | Jescu | Jescu 的芒果</title>
+    <title>Mysql8.0兼任5.7注意事项 | Jescu | Jescu 的芒果</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="Chrome">
+    <meta name="keywords" content="Mysql">
     
     
 
@@ -39,22 +39,18 @@
 
 
     
-    <meta name="description" content="不再需要截图插件了~">
-<meta name="keywords" content="Chrome">
+    <meta name="description" content="使用8.0注意事项">
+<meta name="keywords" content="Mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chrome-自带截取长图">
-<meta property="og:url" content="http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/index.html">
+<meta property="og:title" content="Mysql8.0兼任5.7注意事项">
+<meta property="og:url" content="http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/index.html">
 <meta property="og:site_name" content="Jescu">
-<meta property="og:description" content="不再需要截图插件了~">
+<meta property="og:description" content="使用8.0注意事项">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/1.png">
-<meta property="og:image" content="http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/2.png">
-<meta property="og:image" content="http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/bilibili.png">
-<meta property="og:updated_time" content="2019-05-18T09:29:34.356Z">
+<meta property="og:updated_time" content="2019-05-21T14:08:23.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chrome-自带截取长图">
-<meta name="twitter:description" content="不再需要截图插件了~">
-<meta name="twitter:image" content="http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/1.png">
+<meta name="twitter:title" content="Mysql8.0兼任5.7注意事项">
+<meta name="twitter:description" content="使用8.0注意事项">
     
         <link rel="alternate" type="application/atom+xml" title="Jescu" href="/atom.xml">
     
@@ -156,7 +152,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Chrome-自带截取长图</div>
+        <div class="flex-col header-title ellipsis">Mysql8.0兼任5.7注意事项</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -196,23 +192,24 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正文"><span class="post-toc-number">2.</span> <span class="post-toc-text">正文</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#效果图-这里以哔哩哔哩为例"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">效果图 [这里以哔哩哔哩为例]</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结束语"><span class="post-toc-number">3.</span> <span class="post-toc-text">结束语</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用8-0注意事项"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用8.0注意事项</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装完成时修改默认编码"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">安装完成时修改默认编码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#修改mysql8的密码加密-【caching-sha2-password-】规则为-【mysql-native-password】"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">修改mysql8的密码加密 【caching_sha2_password 】规则为 【mysql_native_password】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#修改C-ProgramData-MySQL-MySQL-Server-8-0-my-ini"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">修改C:\ProgramData\MySQL\MySQL Server 8.0\my.ini</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在MySQL中创建函数时出现错误的解决方法："><span class="post-toc-number">1.0.4.</span> <span class="post-toc-text">在MySQL中创建函数时出现错误的解决方法：</span></a></li></ol></li></ol>
         </nav>
     </aside>
    
-<article id="post-Chrome-自带截取长图" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-Mysql8-0兼任5-7注意事项" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Chrome-自带截取长图</h1>
+        <h1 class="post-card-title">Mysql8.0兼任5.7注意事项</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2019-05-03 13:34:00" datetime="2019-05-03T05:34:00.000Z" itemprop="datePublished">2019-05-03</time>
+            <time class="post-time" title="2019-05-21 22:06:51" datetime="2019-05-21T14:06:51.000Z" itemprop="datePublished">2019-05-21</time>
 
             <br id="mybreak">
             
-	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/工具/">工具</a></li></ul>
+<script>
+	mybreak.style="display:none";
+</script>
 
 
             <i>·</i>
@@ -228,32 +225,15 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>不再需要截图插件了~</p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>想展示网页全图效果给别人看的时候屏幕可视化区域是有限的，以前为了截取长图还特意找Chrome插件，不过效果不是很理想…<br>直到前几天发现原来Chrome自带全屏截图的，废话不多说了请看下文。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>摁下 F12，打开开发者模式，使用快捷键 Ctrl+Shift+P，Mac 当中是 Command+Shift+P，调出如下菜单<br></p><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/2019/05/03/Chrome-自带截取长图/1.png" alt title>
-                </div>
-                <div class="image-caption"></div>
-            </figure><p></p>
-<p>在其中输入 Screenshot 即可看到内容：<br></p><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/2019/05/03/Chrome-自带截取长图/2.png" alt title>
-                </div>
-                <div class="image-caption"></div>
-            </figure><p></p>
-<p>第一个是区域截屏; 第二个是自动截取全部网页; 第三个是当前节点; 第四个是当前屏幕；截取之后，图片自动下载。</p>
-<h3 id="效果图-这里以哔哩哔哩为例"><a href="#效果图-这里以哔哩哔哩为例" class="headerlink" title="效果图 [这里以哔哩哔哩为例]"></a>效果图 [这里以哔哩哔哩为例]</h3><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/2019/05/03/Chrome-自带截取长图/bilibili.png" alt title>
-                </div>
-                <div class="image-caption"></div>
-            </figure>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>日常记录~ 还有很多有用的技巧请点击下方~ 本文只记录对作者感兴趣的地方~ <br><br>原文链接：<a href="https://www.zhihu.com/question/34682699" target="_blank" rel="noopener">Chrome 的审查元素功能有哪些奇技淫巧？</a></p>
+            <h1 id="使用8-0注意事项"><a href="#使用8-0注意事项" class="headerlink" title="使用8.0注意事项"></a>使用8.0注意事项</h1><a id="more"></a>
+<h3 id="安装完成时修改默认编码"><a href="#安装完成时修改默认编码" class="headerlink" title="安装完成时修改默认编码"></a>安装完成时修改默认编码</h3><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看数据库字符集</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">variables</span> <span class="keyword">like</span> <span class="string">'character%'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改字符集，上方语句查出来的哪一条不是utf8就执行下面哪一条</span></span><br><span class="line"><span class="keyword">set</span> character_set_client = utf8;</span><br><span class="line"><span class="keyword">set</span> character_set_server = utf8;</span><br><span class="line"><span class="keyword">set</span> character_set_connection = utf8;</span><br><span class="line"><span class="keyword">set</span> character_set_database = utf8;</span><br><span class="line"><span class="keyword">set</span> character_set_results = utf8;</span><br><span class="line"><span class="keyword">set</span> collation_connection = utf8_general_ci;</span><br><span class="line"><span class="keyword">set</span> collation_database = utf8_general_ci;</span><br><span class="line"><span class="keyword">set</span> collation_server = utf8_general_ci;</span><br><span class="line"><span class="keyword">set</span> character_set_filesystem = utf8;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="修改mysql8的密码加密-【caching-sha2-password-】规则为-【mysql-native-password】"><a href="#修改mysql8的密码加密-【caching-sha2-password-】规则为-【mysql-native-password】" class="headerlink" title="修改mysql8的密码加密 【caching_sha2_password 】规则为 【mysql_native_password】"></a>修改mysql8的密码加密 【caching_sha2_password 】规则为 【mysql_native_password】</h3><blockquote>
+<p>重置root的密码并指定加密规则<br></p><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> <span class="string">'root'</span>@<span class="string">'localhost'</span> <span class="keyword">identified</span> <span class="keyword">with</span> mysql_native_password <span class="keyword">by</span> <span class="string">'1234'</span>;</span><br></pre></td></tr></tbody></table></figure><p></p>
+</blockquote>
+<h3 id="修改C-ProgramData-MySQL-MySQL-Server-8-0-my-ini"><a href="#修改C-ProgramData-MySQL-MySQL-Server-8-0-my-ini" class="headerlink" title="修改C:\ProgramData\MySQL\MySQL Server 8.0\my.ini"></a>修改C:\ProgramData\MySQL\MySQL Server 8.0\my.ini</h3><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">在 [mysqld] 下添加</span><br><span class="line"></span><br><span class="line"><span class="comment"># 服务端默认utf8编码</span></span><br><span class="line">character-<span class="keyword">set</span>-<span class="keyword">server</span>=utf8</span><br><span class="line"><span class="comment"># 用户密码加密规则为5.7的方式 8.0：caching_sha2_password  5.7：mysql_native_password</span></span><br><span class="line">default_authentication_plugin=mysql_native_password</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="在MySQL中创建函数时出现错误的解决方法："><a href="#在MySQL中创建函数时出现错误的解决方法：" class="headerlink" title="在MySQL中创建函数时出现错误的解决方法："></a>在MySQL中创建函数时出现错误的解决方法：</h3><blockquote>
+<p>简单介绍一下，当二进制日志启用后，这个变量就会启用。它控制是否可以信任存储函数创建者<br></p><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> log_bin_trust_function_creators=<span class="literal">TRUE</span>;</span><br></pre></td></tr></tbody></table></figure><p></p>
+</blockquote>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -279,12 +259,12 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新：<time datetime="2019-05-18T09:29:34.356Z" itemprop="dateUpdated">2019-05-18 17:29:34</time>
+    最后更新：<time datetime="2019-05-21T14:08:23.092Z" itemprop="dateUpdated">2019-05-21 22:08:23</time>
 </span>
 
 
         
-        原文链接：<a href="/2019/05/03/Chrome-自带截取长图/" target="_blank" rel="external">http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/</a>
+        原文链接：<a href="/2019/05/21/Mysql8-0兼任5-7注意事项/" target="_blank" rel="external">http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/</a>
         
     </div>
     <footer>
@@ -306,7 +286,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chrome/">Chrome</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mysql/">Mysql</a></li></ul>
 
 
             
@@ -316,7 +296,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&title=《Chrome-自带截取长图》 — Jescu&pic=http://www.yiyongjie.ml/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&title=《Mysql8.0兼任5.7注意事项》 — Jescu&pic=http://www.yiyongjie.ml/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -326,22 +306,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&title=《Chrome-自带截取长图》 — Jescu&source=不再需要截图插件了~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&title=《Mysql8.0兼任5.7注意事项》 — Jescu&source=使用8.0注意事项" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Chrome-自带截取长图》 — Jescu&url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&via=http://www.yiyongjie.ml" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mysql8.0兼任5.7注意事项》 — Jescu&url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&via=http://www.yiyongjie.ml" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -361,21 +341,13 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2019/05/21/Mysql8-0兼任5-7注意事项/" id="post-prev" class="post-nav-link">
-        <h4 class="title">
-          上一篇：Mysql8.0兼任5.7注意事项
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2019/05/03/Git终端加速/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：Git终端加速">下一篇：Git终端加速</h4>
+      <a href="/2019/05/03/Chrome-自带截取长图/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：Chrome-自带截取长图">下一篇：Chrome-自带截取长图</h4>
       </a>
     </div>
   
@@ -473,7 +445,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&title=《Chrome-自带截取长图》 — Jescu&pic=http://www.yiyongjie.ml/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&title=《Mysql8.0兼任5.7注意事项》 — Jescu&pic=http://www.yiyongjie.ml/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -483,22 +455,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&title=《Chrome-自带截取长图》 — Jescu&source=不再需要截图插件了~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&title=《Mysql8.0兼任5.7注意事项》 — Jescu&source=使用8.0注意事项" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Chrome-自带截取长图》 — Jescu&url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/&via=http://www.yiyongjie.ml" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Mysql8.0兼任5.7注意事项》 — Jescu&url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/&via=http://www.yiyongjie.ml" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yiyongjie.ml/2019/05/03/Chrome-自带截取长图/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yiyongjie.ml/2019/05/21/Mysql8-0兼任5-7注意事项/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -509,7 +481,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aO27DQAwFQN//0k6bIpIeSTvA7o4qA5atHRUEf69XfL1/XVff5vdPfjW6MDAwlmW8b6/7e64OVH1K9bl/PBEDA+MAxn1ATELn/f334fXqt3mIx8DAwLgKgtXAXU00MTAwMOaMavqYIzEwMDB6RWy1JfdQdgah/Cu1OAYGxoKMvOv+/5+/Mt/AwMBYitFr1vfaZ/lQs3wqDAyMrRmTAWT1zjz17KWhGBgYuzKSoWPeaMvZOSAqWTEwMA5g5EFwUiUnTbcq+CHDxcDA2IKRjAnvw24vgI5GlRgYGIcx5k2xXqJZHW0+vFwMDIzDGJMA2nsdeQp4+W8YGBhbM/LD9UJq0rbLT/VwBgwMjE0ZSbqWt+Hmixp5MlrYGcHAwFicMdnRuD/i/5TBr/xNYGBgLMvI217VBa8eptp6w8DAOIfRW5XIjz5Z/CrsjGBgYBzDyJO/XmvsK4toGBgYWzPy0JkvT+Qvq5qSPuSBGBgYBzDycjRvtFVTydH4EwMD4zBG3ibrLZBVy93oKRgYGMcwJn+XJHmTQcJD0omBgXEAo9rLqi5YTO7/2CATAwNjQca7ePVC8HyZo5nbYmBgbMGoBrseOLmzV8qWMRgYGMsyJkH2U4OByRgVAwPjHMakcM0fnICb5TQGBgZGK/jm4bU6BC104zAwMA5m5KsS88FANPLEwMA4gDFZiZiQeskiBgbGaYzJokOv6V9upY1LXwwMjGUZP3S1+ghOXoP4AAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3aQXICMQwEQP7/aXJOJWtGkr1AVXNKhbBx+2CJsR6P+PW8eF395dVvqp9KPrvhhYeHh7dp6X8fveat/776H9dbkz8BDw8P7xxvfVjnB/r6ZE7eXW9xeT14eHh4H8lLGuJem55Q8fDw8L6LlzfQvVLx5sKAh4eHt+QlYcQkQU2WngfER7IWPDw8vJiXL/Rzfj5yv4eHh4c3vlXvtbb5EEDy5LwY/PNMPDw8vAO8ySVWvrje4d5rl/Hw8PDu5OUhbFIGquHsZJzrxSbi4eHhbeVV49RJIDvZvuqWlXt5PDw8vAGv2trmP/cCiGg44OpdPDw8vAO8JFboXY/ljW8eMfTexcPDw7uHVw1wC23uIDiulhw8PDy8c7zqsqqXWMlyqyHFKJjAw8PD28RbX2hNxguqi5vEHIX9xsPDw2vx8sZ311XZerl57BttIh4eHt4xXrVVTRa0XnpekKrR8K/P4uHh4R3mVctAHqHm4wLVbwMvygMeHh7eAV5+ZPeO+GoWUjj0d7XXeHh4eEVetTBUT91d7ObAAR4eHt4B3mQR+dBVPraVt/XNLcPDw8Mb85JF9MKL3kBAb+zg8sl4eHh4B3h56DBpr/OgNi82zWYaDw8P7zAvX8pkmOBEsIuHh4d3J68XK+QFYzJwMBpiwMPDw9vKm8QK+WBWbxPz0lJOpvHw8PDGvPnjeu14UmDycoKHh4d3J6+3EfnwUz5AMB/nwsPDwzvHexZf1UuvvGz0ysOL9eDh4eEd4PUuoibHdy/UyCPjMgwPDw+vxZuEp/nwQW+bEnYzxsXDw8Mb8/Iv+XtD2N4gQiG5xcPDw/sAXvXs7bXFvTJQSKnx8PDw3sqbXKTlDXeOx8PDw7uHlzS+1eux3pXVPCzGw8PDO82rfr3fNT61q2mexBZ4eHh4Rd4P5HqwJdJbwnEAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
